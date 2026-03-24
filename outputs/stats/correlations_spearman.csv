@@ -1,0 +1,8 @@
+Variable,Spearman rho,p-value,Significatif,Intensité,Sens,N communes
+Année construction moyenne,-0.7829,0.0,✅,Forte,Négatif ↓,651
+Revenu médian (€),-0.1076,0.017085,✅,Faible,Négatif ↓,491
+Population,-0.0791,0.079754,❌,Faible,Négatif ↓,491
+Nb logements total,0.0088,0.905884,❌,Faible,Neutre ↔,184
+Surface moyenne (m²),0.0649,0.097866,❌,Faible,Positif ↑,651
+Taux de pauvreté (%),0.068,0.132286,❌,Faible,Positif ↑,491
+Consommation énergie (kWh/m²/an),0.5826,0.0,✅,Forte,Positif ↑,651

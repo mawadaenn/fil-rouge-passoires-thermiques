@@ -17,7 +17,7 @@
 
 <br/>
 
-| 👩‍💻 Auteure | 🎓 Encadrant | 🏫 Formation | 📅 Année |
+|  Auteure |  Encadrant |  Formation |  Année |
 |---|---|---|---|
 | Mawada Ennaciri | Yassine Ammami | Simplon — Data Analyst | 2025–2026 |
 
@@ -40,25 +40,25 @@
 
 ---
 
-## 🎯 Contexte & Problématique
+##  Contexte & Problématique
 
 La transition énergétique est une **priorité nationale en France**. Les logements classés **F et G au DPE** — appelés *passoires thermiques* — représentent un enjeu majeur :
 
-- 💸 Précarité énergétique des ménages
-- 🌍 Émissions élevées de CO₂
-- 🏛️ Coûts importants pour les collectivités
+-  Précarité énergétique des ménages
+-  Émissions élevées de CO₂
+-  Coûts importants pour les collectivités
 
 > **❓ Question analytique centrale :**  
 > *Quelles communes présentent la plus forte concentration de logements énergivores, combinée à une population vulnérable économiquement, et doivent être prioritaires pour les politiques de rénovation énergétique ?*
 
 **Périmètre géographique :** 3 régions françaises
-- 🗺️ Île-de-France
-- 🗺️ Hauts-de-France  
-- 🗺️ Bretagne
+-  Île-de-France
+-  Hauts-de-France  
+-  Bretagne
 
 ---
 
-## 🏗️ Architecture du projet
+##  Architecture du projet
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -75,9 +75,9 @@ La transition énergétique est une **priorité nationale en France**. Les logem
 
 ---
 
-## 📊 Sources de données — Option 2 Simplon
+##  Sources de données — Option 2 Simplon
 
-> ✅ **3 types de sources différentes** conformes au référentiel Simplon
+>  **3 types de sources différentes** conformes au référentiel Simplon
 
 | # | Dataset | Type source | Format | Lien |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ La transition énergétique est une **priorité nationale en France**. Les logem
 | 4 | Revenus INSEE Filosofi | **Fichier CSV/ZIP** | CSV (latin-1, sep=;) | [INSEE](https://www.insee.fr) |
 | 5 | Logements RP2022 | **Base de données SQL** | SQLite | [INSEE RP](https://www.insee.fr) |
 
-### 🔑 Clé de jointure
+###  Clé de jointure
 
 Tous les datasets sont reliés par le **code INSEE commune** :
 
@@ -101,7 +101,7 @@ Tous les datasets sont reliés par le **code INSEE commune** :
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Prérequis
 
@@ -141,7 +141,7 @@ folium>=0.14.0
 
 ---
 
-## 🚀 Utilisation
+##  Utilisation
 
 Exécuter les scripts dans l'ordre suivant :
 
@@ -151,8 +151,8 @@ Exécuter les scripts dans l'ordre suivant :
 python scripts/01_collecte_volume.py
 ```
 
-> ⏱️ Durée estimée : ~5 minutes  
-> 📁 Résultat : dossier `data/` avec 7 fichiers
+>  Durée estimée : ~5 minutes  
+>  Résultat : dossier `data/` avec 7 fichiers
 
 ```
 data/
@@ -177,7 +177,7 @@ data/
 jupyter notebook notebooks/02_EDA.ipynb
 ```
 
-> 📊 Génère 11 graphiques dans `outputs/eda/`
+>  Génère 11 graphiques dans `outputs/eda/`
 
 ### Étape 3 — Nettoyage & Fusion
 
@@ -185,7 +185,7 @@ jupyter notebook notebooks/02_EDA.ipynb
 python scripts/03_nettoyage_fusion.py
 ```
 
-> 🧹 Produit `data/processed/dataset_consolide.csv`
+>  Produit `data/processed/dataset_consolide.csv`
 
 ### Étape 4 — Analyse & KPIs
 
@@ -199,7 +199,7 @@ Ouvrir `dashboard/passoires_thermiques.pbix` dans Power BI Desktop.
 
 ---
 
-## 📁 Structure du repository
+##  Structure du repository
 
 ```
 passoires-thermiques-fil-rouge/
@@ -241,7 +241,7 @@ passoires-thermiques-fil-rouge/
 
 ---
 
-## 📐 KPIs & Score composite
+##  KPIs & Score composite
 
 ### Indicateurs calculés
 
@@ -264,7 +264,7 @@ Score_priorité = (taux_passoires_norm)    × 0.40
 
 ---
 
-## 📈 Résultats & Dashboard
+##  Résultats & Dashboard
 
 ### Visualisations produites
 
@@ -285,32 +285,32 @@ Score_priorité = (taux_passoires_norm)    × 0.40
 ### Dashboard Power BI
 
 Le dashboard final comprend :
-- 🗺️ Carte interactive des communes prioritaires
-- 📊 KPIs dynamiques filtrables par région / département
-- 📉 Évolution du score composite
-- 🏆 Top communes à rénover en priorité
+-  Carte interactive des communes prioritaires
+-  KPIs dynamiques filtrables par région / département
+-  Évolution du score composite
+-  Top communes à rénover en priorité
 
 ---
 
 ## 📦 Livrables
 
-- [x] 📄 Cahier des charges (`docs/cahier_des_charges.docx`)
-- [x] 🐍 Scripts Python collecte & nettoyage (`scripts/`)
-- [x] 📓 Notebooks EDA & analyse (`notebooks/`)
-- [x] 🗄️ Base de données SQLite (`data/logements/logements_rp2022.db`)
-- [x] 📊 Dashboard Power BI (`dashboard/`)
-- [ ] 📝 Rapport analytique data storytelling (`docs/rapport_analytique.pdf`)
-- [ ] 🎤 Support de présentation (`docs/slides.pptx`)
+- [x]  Cahier des charges (`docs/cahier_des_charges.docx`)
+- [x]  Scripts Python collecte & nettoyage (`scripts/`)
+- [x]  Notebooks EDA & analyse (`notebooks/`)
+- [x]  Base de données SQLite (`data/logements/logements_rp2022.db`)
+- [x]  Dashboard Power BI (`dashboard/`)
+- [ ]  Rapport analytique data storytelling (`docs/rapport_analytique.pdf`)
+- [ ]  Support de présentation (`docs/slides.pptx`)
 
 ---
 
-## 🛠️ Outils & Technologies
+##  Outils & Technologies
 
 <div align="center">
 
 | Catégorie | Outils |
 |---|---|
-| **Langage** | Python 3.10+ |
+| **Langage** | Python 3.12.12 |
 | **Data** | Pandas, NumPy, GeoPandas |
 | **Visualisation** | Matplotlib, Seaborn, Folium |
 | **Base de données** | SQLite, SQL |

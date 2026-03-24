@@ -1,0 +1,21 @@
+,CODGEO,NOM_COMMUNE,REGION,DEP,TAUX_PASSOIRES,NB_PASSOIRES,REVENU_MEDIAN,TAUX_PAUVRETE,PASSOIRES_POUR_1000_HAB,POPULATION,SCORE_PRIORITE,CATEGORIE_PRIORITE,RANG_PRIORITE
+1,02225,Courchamps,Hauts-de-France,2.0,80.0,4,13758.0,26.5,48.78,82.0,0.6857,Haute,74
+2,62269,Diéval,Hauts-de-France,62.0,100.0,5,18504.0,25.8,7.05,709.0,0.672,Haute,115
+3,02118,Braye,Hauts-de-France,2.0,80.0,4,15737.0,27.1,31.01,129.0,0.6463,Moyenne,210
+4,62144,Boiry-Becquerelle,Hauts-de-France,62.0,80.0,4,14484.0,33.8,8.37,478.0,0.6416,Moyenne,230
+5,59090,Bondues,Hauts-de-France,59.0,80.0,4,13983.0,30.1,0.41,9747.0,0.6407,Moyenne,235
+6,22110,Lanmérin,Bretagne,22.0,80.0,4,15498.0,32.7,6.96,575.0,0.6282,Moyenne,268
+7,02278,Éparcy,Hauts-de-France,2.0,66.67,4,18246.0,26.9,105.26,38.0,0.6278,Moyenne,269
+8,22369,Trémeur,Bretagne,22.0,80.0,4,17503.0,25.3,4.94,809.0,0.6023,Moyenne,333
+9,02111,Brancourt-en-Laonnois,Hauts-de-France,2.0,80.0,4,17702.0,25.8,5.7,702.0,0.6005,Moyenne,336
+10,60398,Le Mesnil-en-Thelle,Hauts-de-France,60.0,83.33,5,19410.0,21.4,2.05,2439.0,0.5901,Moyenne,362
+11,80180,Cavillon,Hauts-de-France,80.0,66.67,4,17266.0,26.0,44.44,90.0,0.5864,Moyenne,370
+12,59010,Anneux,Hauts-de-France,59.0,60.0,3,12878.0,28.9,11.63,258.0,0.5838,Moyenne,374
+13,62020,Alembon,Hauts-de-France,62.0,80.0,4,19227.0,24.2,6.41,624.0,0.5828,Moyenne,378
+14,59142,Cerfontaine,Hauts-de-France,59.0,60.0,3,12750.0,31.0,4.64,646.0,0.5792,Moyenne,390
+15,59374,Marbaix,Hauts-de-France,59.0,75.0,6,18541.0,22.9,13.02,461.0,0.5768,Moyenne,394
+16,29133,Locquirec,Bretagne,29.0,80.0,4,20177.0,25.6,2.57,1555.0,0.568,Moyenne,413
+17,80189,La Chavatte,Hauts-de-France,80.0,50.0,3,13668.0,29.0,50.0,60.0,0.5679,Moyenne,414
+18,62300,Équihen-Plage,Hauts-de-France,62.0,66.67,4,16322.0,30.4,1.53,2619.0,0.5602,Moyenne,427
+19,02042,Azy-sur-Marne,Hauts-de-France,2.0,66.67,4,17255.0,28.0,10.84,369.0,0.5571,Moyenne,432
+20,62265,Delettes,Hauts-de-France,62.0,71.43,5,18720.0,28.5,4.45,1124.0,0.5529,Moyenne,436
