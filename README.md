@@ -114,7 +114,7 @@ jupyter
 ### Cloner le repository
 
 ```bash
-git clone https://github.com/ton-username/passoires-thermiques-fil-rouge.git
+git clone https://github.com/mawadaenn/passoires-thermiques-fil-rouge.git
 cd passoires-thermiques-fil-rouge
 ```
 
@@ -148,7 +148,7 @@ Exécuter les scripts dans l'ordre suivant :
 ### Étape 1 — Collecte des données
 
 ```bash
-python scripts/01_collecte_volume.py
+python scripts/collecte.ipynb
 ```
 
 >  Durée estimée : ~5 minutes  
@@ -174,7 +174,7 @@ data/
 ### Étape 2 — EDA (Analyse Exploratoire)
 
 ```bash
-jupyter notebook notebooks/02_EDA.ipynb
+jupyter notebook notebooks/eda.ipynb
 ```
 
 >  Génère 11 graphiques dans `outputs/eda/`
@@ -182,7 +182,7 @@ jupyter notebook notebooks/02_EDA.ipynb
 ### Étape 3 — Nettoyage & Fusion
 
 ```bash
-python scripts/03_nettoyage_fusion.py
+python scripts/nettoyage_fusion.ipynb
 ```
 
 >  Produit `data/processed/dataset_consolide.csv`
@@ -190,7 +190,7 @@ python scripts/03_nettoyage_fusion.py
 ### Étape 4 — Analyse & KPIs
 
 ```bash
-jupyter notebook notebooks/04_analyse_kpi.ipynb
+jupyter notebook notebooks/analyse_kpi.ipynb
 ```
 
 ### Étape 5 — Dashboard Power BI
@@ -205,14 +205,14 @@ Ouvrir `dashboard/passoires_thermiques.pbix` dans Power BI Desktop.
 passoires-thermiques-fil-rouge/
 │
 ├── 📂 scripts/
-│   ├── 01_collecte_volume.py       # Collecte toutes sources
-│   ├── 03_nettoyage_fusion.py      # Nettoyage & fusion datasets
+│   ├── collecte.ipynb       # Collecte toutes sources
+│   ├── nettoyage_fusion.ipynb      # Nettoyage & fusion datasets
 │   └── utils/
-│       └── helpers.py              # Fonctions utilitaires
+│       └── helpers.ipynb              # Fonctions utilitaires
 │
 ├── 📂 notebooks/
-│   ├── 02_EDA.ipynb                # Analyse exploratoire complète
-│   └── 04_analyse_kpi.ipynb        # KPIs & score composite
+│   ├── eda.ipynb                # Analyse exploratoire complète
+│   └── analyse_kpi.ipynb        # KPIs & score composite
 │
 ├── 📂 data/
 │   ├── dpe/                        # Données DPE par région
