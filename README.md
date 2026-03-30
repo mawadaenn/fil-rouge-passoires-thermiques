@@ -228,7 +228,7 @@ passoires-thermiques-fil-rouge/
 │   └── reports/                    # Rapports exportés
 │
 ├── 📂 dashboard/
-│   └── passoires_thermiques.pbix   # Dashboard Power BI
+│   └── fil-rouge.pbix   # Dashboard Power BI
 │
 ├── 📂 docs/
 │   ├── cahier_des_charges.docx     # Cahier des charges complet
