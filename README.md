@@ -25,21 +25,6 @@
 
 ---
 
-## 📋 Table des matières
-
-- [Contexte & Problématique](#-contexte--problématique)
-- [Architecture du projet](#-architecture-du-projet)
-- [Sources de données](#-sources-de-données-option-2-simplon)
-- [Installation](#-installation)
-- [Utilisation](#-utilisation)
-- [Structure du repository](#-structure-du-repository)
-- [KPIs & Score composite](#-kpis--score-composite)
-- [Résultats & Dashboard](#-résultats--dashboard)
-- [Livrables](#-livrables)
-- [Outils & Technologies](#-outils--technologies)
-
----
-
 ##  Contexte & Problématique
 
 La transition énergétique est une **priorité nationale en France**. Les logements classés **F et G au DPE** — appelés *passoires thermiques* — représentent un enjeu majeur :
@@ -106,7 +91,7 @@ Tous les datasets sont reliés par le **code INSEE commune** :
 ### Prérequis
 
 ```bash
-Python 3.10+
+Python 3.12
 pip
 jupyter
 ```
@@ -114,29 +99,8 @@ jupyter
 ### Cloner le repository
 
 ```bash
-git clone https://github.com/mawadaenn/passoires-thermiques-fil-rouge.git
-cd passoires-thermiques-fil-rouge
-```
-
-### Installer les dépendances
-
-```bash
-pip install -r requirements.txt
-```
-
-**`requirements.txt`**
-```
-pandas>=2.0.0
-numpy>=1.24.0
-geopandas>=0.14.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-requests>=2.31.0
-jupyter>=1.0.0
-ipykernel>=6.0.0
-scipy>=1.10.0
-scikit-learn>=1.3.0
-folium>=0.14.0
+git clone [https://github.com/mawadaenn/passoires-thermiques-fil-rouge.git](https://github.com/mawadaenn/fil-rouge-passoires-thermiques.git)
+cd fil-rouge-passoires-thermiques
 ```
 
 ---
@@ -190,19 +154,19 @@ python scripts/nettoyage_fusion.ipynb
 ### Étape 4 — Analyse & KPIs
 
 ```bash
-jupyter notebook notebooks/analyse_kpi.ipynb
+jupyter notebook notebooks/analyse_statistique.ipynb
 ```
 
 ### Étape 5 — Dashboard Power BI
 
-Ouvrir `dashboard/passoires_thermiques.pbix` dans Power BI Desktop.
+Ouvrir `dashboard/fil-rouge.pbix` dans Power BI Desktop.
 
 ---
 
 ##  Structure du repository
 
 ```
-passoires-thermiques-fil-rouge/
+fil-rouge-passoires-thermiques/
 │
 ├── 📂 scripts/
 │   ├── collecte.ipynb       # Collecte toutes sources
@@ -212,7 +176,7 @@ passoires-thermiques-fil-rouge/
 │
 ├── 📂 notebooks/
 │   ├── eda.ipynb                # Analyse exploratoire complète
-│   └── analyse_kpi.ipynb        # KPIs & score composite
+│   └── analyse_statistique.ipynb        # KPIs & score composite
 │
 ├── 📂 data/
 │   ├── dpe/                        # Données DPE par région
@@ -224,18 +188,14 @@ passoires-thermiques-fil-rouge/
 │
 ├── 📂 outputs/
 │   ├── eda/                        # Graphiques EDA (PNG)
-│   ├── figures/                    # Visualisations finales
-│   └── reports/                    # Rapports exportés
+│   ├── stats/                    # Visualisations finales
 │
-├── 📂 dashboard/
-│   └── fil-rouge.pbix   # Dashboard Power BI
+├── |── fil-rouge.pbix   # Dashboard Power BI
 │
 ├── 📂 docs/
 │   ├── cahier_des_charges.docx     # Cahier des charges complet
 │   └── rapport_analytique.pdf      # Rapport data storytelling
 │
-├── 📄 requirements.txt             # Dépendances Python
-├── 📄 .gitignore
 └── 📄 README.md
 ```
 
@@ -312,7 +272,7 @@ Le dashboard final comprend :
 |---|---|
 | **Langage** | Python 3.12.12 |
 | **Data** | Pandas, NumPy, GeoPandas |
-| **Visualisation** | Matplotlib, Seaborn, Folium |
+| **Visualisation** | Matplotlib, Seaborn |
 | **Base de données** | SQLite, SQL |
 | **BI & Dashboard** | Power BI Desktop |
 | **Géospatial** | GeoPandas, GeoJSON |
@@ -320,7 +280,6 @@ Le dashboard final comprend :
 | **Dev** | VS Code, Jupyter Notebook |
 | **Gestion projet** | JIRA, Confluence |
 | **Versioning** | Git, GitHub |
-| **Cloud (optionnel)** | Databricks |
 
 </div>
 
