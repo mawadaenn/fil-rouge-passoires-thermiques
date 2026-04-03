@@ -46,21 +46,29 @@ La transition énergétique est une **priorité nationale en France**. Les logem
 ##  Architecture du projet
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    PIPELINE DATA COMPLET                        │
-├─────────────┬──────────────┬─────────────┬──────────────────────┤
-│  COLLECTE   │     EDA      │  NETTOYAGE  │   ANALYSE & VISU     │
-│             │              │  & FUSION   │                      │
-│ API REST    │ Statistiques │ Valeurs     │ Score composite      │
-│ CSV/ZIP     │ Distributions│ manquantes  │ Clustering           │
-│ SQLite      │ Corrélations │ Jointures   │ Dashboard Power BI   │
-│             │ Cartographie │ KPIs        │ Carte choroplèthe    │
-└─────────────┴──────────────┴─────────────┴──────────────────────┘
-```
 
+```
+## 📊 Pipeline Data Complet
+
+| # | Étape | Sous-éléments | Description |
+|---|------|---------------|-------------|
+| 1 | Collecte | API REST | Récupération des données DPE (JSON paginé) |
+|   |          | CSV / ZIP | Données INSEE (population, revenus, logements) |
+|   |          | SQLite | Stockage des données |
+| 2 | EDA | Statistiques | Analyse descriptive des données |
+|   |     | Distributions | Analyse des variables |
+|   |     | Corrélations | Relations entre variables |
+|   |     | Cartographie | Visualisation géographique |
+| 3 | Nettoyage & Fusion | Valeurs manquantes | Traitement des données nulles |
+|   |                     | Jointures | Fusion via CODEGEO |
+|   |                     | KPIs | Création d’indicateurs |
+| 4 | Analyse & Visualisation | Score composite | Priorisation des zones |
+|   |                         | Clustering | Segmentation des communes |
+|   |                         | Power BI | Dashboard interactif |
+|   |                         | Carte choroplèthe | Visualisation géographique |
 ---
 
-##  Sources de données — Option 2 Simplon
+##  Sources de données — Option 2 
 
 >  **3 types de sources différentes** conformes au référentiel Simplon
 
@@ -171,8 +179,6 @@ fil-rouge-passoires-thermiques/
 ├── 📂 scripts/
 │   ├── collecte.ipynb       # Collecte toutes sources
 │   ├── nettoyage_fusion.ipynb      # Nettoyage & fusion datasets
-│   └── utils/
-│       └── helpers.ipynb              # Fonctions utilitaires
 │
 ├── 📂 notebooks/
 │   ├── eda.ipynb                # Analyse exploratoire complète
@@ -198,8 +204,6 @@ fil-rouge-passoires-thermiques/
 │
 └── 📄 README.md
 ```
-
----
 
 ##  KPIs & Score composite
 
@@ -259,8 +263,8 @@ Le dashboard final comprend :
 - [x]  Notebooks EDA & analyse (`notebooks/`)
 - [x]  Base de données SQLite (`data/logements/logements_rp2022.db`)
 - [x]  Dashboard Power BI (`dashboard/`)
-- [ ]  Rapport analytique data storytelling (`docs/rapport_analytique.pdf`)
-- [ ]  Support de présentation (`docs/slides.pptx`)
+- [x]  Rapport analytique data storytelling (`docs/rapport_analytique.pdf`)
+- [x]  Support de présentation (`docs/Passoires Thermiques.pptx`)
 
 ---
 
